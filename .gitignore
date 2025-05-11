@@ -1,0 +1,25 @@
+# Ignore virtual environments
+venv/
+env/
+.env/
+__pycache__/
+*.py[cod]
+
+# Ignore Django/Flask/etc. cache or logs
+*.log
+*.sqlite3
+
+# Ignore VSCode and system files
+.vscode/
+.idea/
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# Ignore test coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
