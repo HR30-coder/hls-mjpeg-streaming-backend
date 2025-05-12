@@ -3,7 +3,10 @@ services:
   - type: web
     name: django-backend
     env: python
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: |
+      "apt-get update"
+      "apt-get install -y ffmpeg"
+      "pip install -r requirements.txt"
     startCommand: "uvicorn rtspbackend.asgi:application --port 8080"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
