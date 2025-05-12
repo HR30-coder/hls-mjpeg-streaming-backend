@@ -1,0 +1,6 @@
+# .renderignore
+venv/
+*.pyc
+__pycache__/
+*.db
+outputs/

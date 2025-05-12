@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-wy97%#-z-22siv#h45h(b0b7mxbkyh9-!f)ns38clgs%y&%a_)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -59,7 +59,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "*",
 ]
 
 ROOT_URLCONF = "rtspbackend.urls"
@@ -129,6 +129,8 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = "static/"
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/outputs/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'outputs')
