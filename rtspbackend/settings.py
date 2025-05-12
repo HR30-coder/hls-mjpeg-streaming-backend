@@ -59,7 +59,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "*",
+    "*"
 ]
 
 ROOT_URLCONF = "rtspbackend.urls"
